@@ -26,7 +26,7 @@ def question1():
     answers["(c) explain"] = "It might take less memory and time, but not as efficient as agglomerative clusterings"
 
     # type: bool (True/False)
-    answers["(d)"] = "False"
+    answers["(d)"] = False
 
     # type: explanatory string (at least four words)
     answers["(d) explain"] = "We will reassign the points to the respective clusters in the post process."
@@ -161,13 +161,13 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = set("Group A","Group B")
+    answers["(a)"] = {"Group A","Group B"}
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = "The smallest distance between all possible distances(from groups), the lowest was from Group A to Group B"
 
     # type: set
-    answers["(b)"] = set("Group A","Group C")
+    answers["(b)"] = {"Group A","Group C"}
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = "The smallest distance between the farthest points in all possiblities is between A and C clusters"
@@ -182,47 +182,47 @@ def question6():
     answers = {}
 
     # type: set
-    answers["(a) core"] = set("B","C","E","F","I","J","L","M")
+    answers["(a) core"] = {"B","C","E","F","I","J","L","M"}
 
     # type: set
-    answers["(a) boundary"] = set("D","G")
+    answers["(a) boundary"] = {"D","G"}
 
     # type: set
-    answers["(a) noise"] = set("A","H")
+    answers["(a) noise"] = {"A","H"}
 
     # type: set
-    answers["(b) cluster 1"] = set()
+    answers["(b) cluster 1"] = {}
 
     # type: set
-    answers["(b) cluster 2"] = set("B","D","C","E","F","G")
+    answers["(b) cluster 2"] = {"B","D","C","E","F","G"}
 
     # type: set
-    answers["(b) cluster 3"] = set()
+    answers["(b) cluster 3"] = {}
 
     # type: set
-    answers["(b) cluster 4"] = set("I","J","L","M")
+    answers["(b) cluster 4"] = {"I","J","L","M"}
 
     # type: set
 
-    answers["(c)-a core"] = set("B","C","D","E","F","G","I","J","L","M")
+    answers["(c)-a core"] = {"B","C","D","E","F","G","I","J","L","M"}
 
     # type: set
-    answers["(c)-a boundary"] = set("A","H")
+    answers["(c)-a boundary"] = {"A","H"}
 
     # type: set
-    answers["(c)-a noise"] = set()
+    answers["(c)-a noise"] ={}
 
     # type: set
-    answers["(c)-b cluster 1"] = set()
+    answers["(c)-b cluster 1"] = {}
 
     # type: set
-    answers["(c)-b cluster 2"] = set("A","B","C","D","E","F","G","H","I","J","L","M")
+    answers["(c)-b cluster 2"] = {"A","B","C","D","E","F","G","H","I","J","L","M"}
 
     # type: set
-    answers["(c)-b cluster 3"] = set()
+    answers["(c)-b cluster 3"] = {}
 
     # type: set
-    answers["(c)-b cluster 4"] = set()
+    answers["(c)-b cluster 4"] = {}
 
     return answers
 
