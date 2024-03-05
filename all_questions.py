@@ -56,10 +56,10 @@ def question1():
     answers["(h) explain"] = "It is true, if the distance between clusters are increasing, the points with in a cluster more likely to form a class, so SSB will reduce as the compliment to raise in SSE, so overall it will be a constant"
 
     # type: bool (True/False)
-    answers["(i)"] = True
+    answers["(i)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(i) explain"] = "It is possible that increase in cohesion will make the cluster move further away."
+    answers["(i) explain"] = "SSE + SSB is constant so if one increases the other decreases"
 
     return answers
 
