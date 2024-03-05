@@ -26,10 +26,10 @@ def question1():
     answers["(c) explain"] = "It might take less memory and time, but not as efficient as agglomerative clusterings"
 
     # type: bool (True/False)
-    answers["(d)"] = "Decreases"
+    answers["(d)"] = "True"
 
     # type: explanatory string (at least four words)
-    answers["(d) explain"] = "It decreases because once the new clusters formed we have more and more clusters, so the SSE will go down"
+    answers["(d) explain"] = "We will reassign the points to the respective clusters in the post process."
 
     # type: bool (True/False)
     answers["(e)"] = True
