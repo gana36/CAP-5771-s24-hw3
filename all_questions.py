@@ -267,7 +267,7 @@ def question8():
     answers["(a) Matrix 2"] = "Dataset X"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 2"] = "The correlation in B and in C are strong and for A and D its relatively weak so they has lighter blue shade"
+    answers["(a) explain diag entries, Matrix 2"] = "The relation in B and in C are strong and for A and D its relatively weak so they has lighter blue shade"
 
     # type: explanatory string (at least four words)
     answers["(a) explain non-diag entries, Matrix 2"] = "We could see a 2*2 matrix at each 2 strides along the diagonal which includes off diagonal elements, indicating the pattern in X, as A and B close they have a slight blue, B and C close they do have the blue shade, similarly for the C and D which are close we could see a 2x2 light blue shade in the bottom right of Matrix 2"
@@ -276,7 +276,7 @@ def question8():
     answers["(a) Matrix 3"] = "Dataset Y"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 3"] = "The correlation in B and in C are strong and for A and D its relatively weak so they has lighter blue shade"
+    answers["(a) explain diag entries, Matrix 3"] = "The relation in B and in C are strong and for A and D its relatively weak so they has lighter blue shade"
 
     # type: explanatory string (at least four words)
     answers["(a) explain non-diag entries, Matrix 3"] = "If we draw a horizontal line along y axis lets say that seperates the A,B,C as one group and D as other, and that makes the first 3 has a good relationship among themselves and D had relatively little to no relationship with other set (A,B,C), this is why we could see a seperate 3X3 in Matrix 3." 
