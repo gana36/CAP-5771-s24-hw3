@@ -1,6 +1,6 @@
 # Add import files
 import pickle
-import math as m
+
 
 
 # -----------------------------------------------------------
@@ -26,7 +26,7 @@ def question1():
     answers["(c) explain"] = "It might take less memory and time, but not as efficient as agglomerative clusterings"
 
     # type: bool (True/False)
-    answers["(d)"] = "True"
+    answers["(d)"] = "False"
 
     # type: explanatory string (at least four words)
     answers["(d) explain"] = "We will reassign the points to the respective clusters in the post process."
@@ -56,10 +56,10 @@ def question1():
     answers["(h) explain"] = "It is true, if the distance between clusters are increasing, the points with in a cluster more likely to form a class, so SSB will reduce as the compliment to raise in SSE, so overall it will be a constant"
 
     # type: bool (True/False)
-    answers["(i)"] = False
+    answers["(i)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(i) explain"] = "when SSB increases, SSE should decrease."
+    answers["(i) explain"] = "It is possible that increase in cohesion will make the cluster move further away."
 
     return answers
 
@@ -98,13 +98,13 @@ def question3():
     answers = {}
 
     # type: a string that evaluates to a float
-    answers["(a) SSE"] = 4 * R
+    answers["(a) SSE"] = "4*R"
 
     # type: a string that evaluates to a float
-    answers["(b) SSE"] = m.sqrt((b-R)**2 + a**2) + m.sqrt((b+R)**2 + a**2) + m.sqrt(b**2 + (a-R)**2) + m.sqrt(b**2 + (a+R)**2)
+    answers["(b) SSE"] = "sqrt((b-R)**2 + a**2) + sqrt((b+R)**2 + a**2) + sqrt(b**2 + (a-R)**2) + sqrt(b**2 + (a+R)**2)"
 
     # type: a string that evaluates to a float
-    answers["(c) SSE"] = 2* (2 + 2.2) * R
+    answers["(c) SSE"] = "2*(2 + 2.2)*R"
 
     return answers
 
@@ -191,13 +191,13 @@ def question6():
     answers["(a) noise"] = set("A","H")
 
     # type: set
-    answers["(b) cluster 1"] = set("A")
+    answers["(b) cluster 1"] = set()
 
     # type: set
     answers["(b) cluster 2"] = set("B","D","C","E","F","G")
 
     # type: set
-    answers["(b) cluster 3"] = set("H")
+    answers["(b) cluster 3"] = set()
 
     # type: set
     answers["(b) cluster 4"] = set("I","J","L","M")
@@ -216,10 +216,10 @@ def question6():
     answers["(c)-b cluster 1"] = set()
 
     # type: set
-    answers["(c)-b cluster 2"] = set("A","B","C","D","E","F","G")
+    answers["(c)-b cluster 2"] = set("A","B","C","D","E","F","G","H","I","J","L","M")
 
     # type: set
-    answers["(c)-b cluster 3"] = set("H","I","J","L","M")
+    answers["(c)-b cluster 3"] = set()
 
     # type: set
     answers["(c)-b cluster 4"] = set()
@@ -345,13 +345,13 @@ def question10():
     answers = {}
 
     # type: string
-    answers["(a) Figure (a)"] = "Yes"
+    answers["(a) Figure (a)"] = "No"
 
     # type: string
     answers["(a) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "DBSCAN can distingush complex and convoluted datasets and its the case in a, and b where the density of eyes, nose and mouth are almost similar so it could distinguish them properly."
+    answers["(a) explain"] = "DBSCAN can distingush complex and convoluted datasets and its the case in b where the density of eyes, nose and mouth are almost similar so it could distinguish them properly."
 
     # type: string
     answers["(b) Figure (a)"] = "No"
@@ -363,7 +363,7 @@ def question10():
     answers["(b) explain"] = "KMeans cant gurantee that it could find the all the mentioned successfully, as the points are convoluted so its harder to KMeans to find them in case of a, but it might successfully end up in finding in (b) as if the centers start at the eyes, nose and mouth."
 
     # type: string
-    answers["(c)"] = "DBSCAN"
+    answers["(c)"] = "DBSCAN, but in case of Figure A, if we could flip the density shown in the other way around we could get the same image as in B, so that we could apply DBSCAN over the modified image to detect the nose, etc."
 
     return answers
 
