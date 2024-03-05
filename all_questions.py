@@ -191,13 +191,13 @@ def question6():
     answers["(a) noise"] = {"A","H"}
 
     # type: set
-    answers["(b) cluster 1"] = {}
+    answers["(b) cluster 1"] = set()
 
     # type: set
     answers["(b) cluster 2"] = {"B","D","C","E","F","G"}
 
     # type: set
-    answers["(b) cluster 3"] = {}
+    answers["(b) cluster 3"] = set()
 
     # type: set
     answers["(b) cluster 4"] = {"I","J","L","M"}
@@ -210,19 +210,19 @@ def question6():
     answers["(c)-a boundary"] = {"A","H"}
 
     # type: set
-    answers["(c)-a noise"] ={}
+    answers["(c)-a noise"] =set()
 
     # type: set
-    answers["(c)-b cluster 1"] = {}
+    answers["(c)-b cluster 1"] = set()
 
     # type: set
     answers["(c)-b cluster 2"] = {"A","B","C","D","E","F","G","H","I","J","L","M"}
 
     # type: set
-    answers["(c)-b cluster 3"] = {}
+    answers["(c)-b cluster 3"] = set()
 
     # type: set
-    answers["(c)-b cluster 4"] = {}
+    answers["(c)-b cluster 4"] = set()
 
     return answers
 
